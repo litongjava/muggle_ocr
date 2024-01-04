@@ -1,0 +1,5 @@
+tensorflow>=1.14
+numpy
+pillow
+opencv-python
+pyyaml

@@ -1,0 +1,1 @@
+http://tl.cyg.changyou.com/transaction/captcha-image?goods_serial_num=202312302241102406
