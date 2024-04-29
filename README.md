@@ -1,18 +1,11 @@
 # muggle_ocr
 ## introduction
-（白嫖）这是一个为麻瓜设计的本地OCR模块
+**Muggle OCR** 是一个为“麻瓜”设计的高效本地OCR模块，旨在通过简单的几步设置提供强大的文本识别功能，无论是在处理印刷文本还是解析验证码，都能让用户在工作中畅通无阻。
 
-只需要简单几步操作即可拥有两大通用识别模块，让你在工作中畅通无阻。
-
-
-
-测试图片 test1.png
-
-![](https://kerlomz-blog.oss-cn-beijing.aliyuncs.com/test1.png)
-
-测试图片 test2.jpg
-
-![](https://kerlomz-blog.oss-cn-beijing.aliyuncs.com/test2.jpg)
+### 特点
+- **易于安装和使用**：只需简单的命令，即可在Python 3.8及以上环境中运行。
+- **双模型支持**：内置了两种模型类型，`ModelType.OCR` 专用于普通印刷文本识别，`ModelType.Captcha` 用于识别4-6位的简单英数验证码。
+- **快速准确**：识别过程通常在10毫秒左右，即便在配置较低的CPU上也能保持15-20毫秒的识别速度。
 
 ## install
 python3.8及以上,否则会出现这个错误
@@ -30,9 +23,6 @@ python setup.py install
 
 以上参数两者选其一即可，默认 model_type 为 ModelType.OCR, 若指定 conf_path 参数则优先使用自定义模型。
 
-
-
-
 ## 核心API
 
 1. ```SDK.predict(image_bytes: bytes)```
@@ -40,6 +30,11 @@ python setup.py install
 
 
 ## 使用指北
+测试图片 test1.png  
+![](https://kerlomz-blog.oss-cn-beijing.aliyuncs.com/test1.png)
+
+测试图片 test2.jpg  
+![](https://kerlomz-blog.oss-cn-beijing.aliyuncs.com/test2.jpg)
 
 **注意: 因模块过新，阿里/清华等第三方源可能尚未更新镜像，因此手动指定使用境外源，为了提高依赖的安装速度，可预先自行安装依赖：tensorflow/numpy/opencv-python/pillow/pyyaml**
 
@@ -117,8 +112,6 @@ ceey 0.009973526000976562
 ceey 0.009973287582397461
 ```
 
-
-
 OCR和验证码识别的速度基本都在10ms左右，低配CPU可能需要15-20ms。本模块仅支持单行识别，如有多行识别需求请自行采用目标检测预裁图片。
-
-对本项目感兴趣的可以加QQ群交流：857149419
+## 交流群
+对本项目感兴趣的可以加 微信 群交流：jdk131219
