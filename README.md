@@ -6,6 +6,9 @@
 - **易于安装和使用**：只需简单的命令，即可在Python 3.8及以上环境中运行。
 - **双模型支持**：内置了两种模型类型，`ModelType.OCR` 专用于普通印刷文本识别，`ModelType.Captcha` 用于识别4-6位的简单英数验证码。
 - **快速准确**：识别过程通常在10毫秒左右，即便在配置较低的CPU上也能保持15-20毫秒的识别速度。
+## 开源地址
+[gitee](https://gitee.com/ppnt/muggle_ocr)
+[github](https://github.com/litongjava/muggle_ocr)
 
 ## install
 python3.8及以上,否则会出现这个错误
